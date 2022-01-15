@@ -22,8 +22,8 @@ class App {
   render() {
     this.el.innerHTML = `
       <div class="row">
-        <div class="column">${this.event.render()}</div>
-        <div class="column">${this.comments.render()}</div>
+        <div class="col-md-6 column">${this.event.render()}</div>
+        <div class="col-md-m6 column">${this.comments.render()}</div>
       </div>
     `;
   }

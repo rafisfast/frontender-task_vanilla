@@ -23,10 +23,17 @@ export default class {
   render() {
     return `
       <div class="event">
-        ${this.title.render()}
-        ${this.description.render()}
-        ${this.funding.render()}
-        ${this.details.render()}
+          <div class="card">
+            <div class="card-header">
+             ${this.title.render()}
+            </div>
+            <div class="card-body">
+              ${this.description.render()}
+              <hr></hr>
+              ${this.funding.render()}
+              ${this.details.render()}
+            </div>
+          </div>
       </div>
     `;
   }
