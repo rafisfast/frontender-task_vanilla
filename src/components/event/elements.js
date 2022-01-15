@@ -43,9 +43,9 @@ export class Funding {
     const percentage = this.funding.raised / this.funding.target * 100;
 
     return `
-      <div class="event__progress">
-        <b class="event__progress_meter" style="width: ${percentage}%"></b>
-      </div>
+      <div class="event__progress progress">
+        <b class="event__progress_meter progress-bar" style="width: ${percentage}%"></b>
+      </div><br>
     `;
     
   }
@@ -54,7 +54,7 @@ export class Funding {
     return `
       <div class="event__funding">
         <p class="event__funding__totals">
-          <span class="event__funding__raised">£${this.funding.raised/100} raised</span><br>
+          <span class="event__funding__raised">£${Math.floor(this.funding.raised/100)}.00 raised</span><br>
           of £${this.funding.target/100} target.
         </p>
         ${this.renderProgress()}

@@ -1,5 +1,6 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  background: #f7f7f7;
 }
 
 .event__funding {
@@ -14,4 +15,13 @@ body {
 .event__details { 
   background: #e5e5e5;
     border: 1px solid #32323221
+}
+
+.event__progress.progress {
+  height: 40px;
+  border-radius: 0 !important;
+}
+
+.event__progress_meter {
+  background: #19d319 !important
 }
